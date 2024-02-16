@@ -1,0 +1,61 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .button {
+    @apply cursor-pointer px-[1.5rem] py-[0.75rem] border-solid border-[2px] border-app-neutral-gray uppercase tracking-[1px] font-[400] inline-block;
+  }
+  .different {
+    @apply flex gap-[2rem] flex-col items-center;
+  }
+  .how-bg {
+    @apply bg-no-repeat bg-right-top;
+  }
+  .footer-bg {
+    @apply bg-no-repeat bg-left-top;
+  }
+}
+
+body {
+  font-family: "Karla", sans-serif;
+  text-align: center;
+}
+
+p {
+  color: hsl(273, 4%, 51%);
+}
+
+h1,
+h2 {
+  margin-bottom: 1.5rem;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: black;
+  font-family: "DM Serif Display", serif;
+  line-height: 1.25;
+}
+
+.pattern-div {
+  background-position: 100% 40%;
+}
+
+.pattern-div-big {
+  background-position: 100% 40%;
+}
+
+.header-help {
+  background-position: 0% 61%;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
